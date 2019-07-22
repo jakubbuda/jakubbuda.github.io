@@ -114,6 +114,16 @@
 	text-align:center;
 }
 	
+.honeypot-field {
+  display: none;
+}
 
+.thankyou_message{
+	font-size: 3rem;
+	margin:1rem;
+	font-family:Raleway;
+	font-weight: 800;
+	
+}
 
 

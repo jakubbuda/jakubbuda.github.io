@@ -72,7 +72,7 @@
       return false;
     }
 
-    disableAllButtons(form);
+   
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -82,10 +82,7 @@
         console.log(xhr.status, xhr.statusText);
         console.log(xhr.responseText);
         form.reset();
-        var formElements = form.querySelector(".form-elements")
-        if (formElements) {
-          formElements.style.display = "none"; // hide form
-        }
+        
         var thankYouMessage = form.querySelector(".thankyou_message");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
