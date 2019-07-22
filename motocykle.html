@@ -180,7 +180,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-  <script src="https://gist.github.com/attenzione/7098476.js"></script>
+  <script src="assets/jquery.doubletap.js"></script>
 	<script>
 
     // 1. Initialize fotorama manually.
@@ -199,7 +199,7 @@ jQuery('.fotorama').dblclick(function(){
 });
 
 
-jQuery('.fotorama').on('doubletap',function(event){
+jQuery('.fotorama').on('doubletap',function(){
  fotorama.requestFullScreen();
 });
 
