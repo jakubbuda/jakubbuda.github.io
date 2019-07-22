@@ -26,13 +26,20 @@
 	
  }
  
-
-
-.outer{
+@media (min-width: 992px) {
+  .outer{
 	text-align:center;
 	 position: relative;
      z-index: 20;
 	margin-left:2rem;
 	margin-right:2rem;
+	border-radius: .25rem!important;
+  }
+}
+
+.outer{
+	text-align:center;
+	 position: relative;
+     z-index: 20;
 	border-radius: .25rem!important;
 }
