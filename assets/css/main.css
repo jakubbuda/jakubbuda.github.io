@@ -41,11 +41,11 @@
 				text-align: center;
 				border-radius: 100%;
 				border: 0;
-				color: black;
+				color: #e6a756;
 			}
 
 				ul.icons li a:hover {
-					color: #e6a756;
+					color: rgba(255,255,255,.7);
 				}
 
 
