@@ -88,7 +88,7 @@
           </div>
         </div>
        <div class="outer">
-		<div class="fotorama_custom"  data-width="100%"
+		<div class="fotorama_custom" id="tarpan" data-width="100%"
         data-ratio="800/600" data-loop="true" data-autoplay="3000"  data-arrows="true" data-click="true" data-swipe="true" data-autoplay="true" >
 	    <img  src="img/tarpan1.jpg" alt="">
 		<img  src="img/tarpan3.jpg" alt="">
@@ -116,7 +116,7 @@
           </div>
         </div>
 		<div class="outer">
-		<div class="fotorama_custom"  data-width="100%"
+		<div class="fotorama_custom" id="W110" data-width="100%"
         data-ratio="800/600" data-loop="true" data-autoplay="3000"  data-arrows="true" data-click="true" data-swipe="true" data-autoplay="true" >
 	    <img  src="img/mercedesbenz1.png" alt="">
 		</div>
@@ -156,23 +156,38 @@
 	<script>
 
     // 1. Initialize fotorama manually.
-var $fotoramaDiv = jQuery('.fotorama_custom').fotorama({
+var $fotoramaDiv = jQuery('#tarpan').fotorama({
+  click:false,
+  allowfullscreen:true,
+});
+          var tarpan = $fotoramaDiv.data('fotorama');
+
+var $fotoramaDiv = jQuery('#W110').fotorama({
   click:false,
   allowfullscreen:true,
 });
 
     // 2. Get the API object.
-    var fotorama = $fotoramaDiv.data('fotorama');
+    var W110 = $fotoramaDiv.data('fotorama');
 
 
-jQuery('.fotorama').dblclick(function(){
-    fotorama.requestFullScreen();
+jQuery('#tarpan').dblclick(function(){
+    tarpan.requestFullScreen();
+
+});
+
+jQuery('#W110').dblclick(function(){
+    W110.requestFullScreen();
 
 });
 
 
-jQuery('.fotorama').on('doubletap',function(){
- fotorama.requestFullScreen();
+jQuery('#tarpan').on('doubletap',function(){
+ tarpan.requestFullScreen();
+});
+
+jQuery('#W110').on('doubletap',function(){
+ W110.requestFullScreen();
 });
 
 </script>

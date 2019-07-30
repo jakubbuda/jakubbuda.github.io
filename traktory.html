@@ -88,7 +88,7 @@
           </div>
         </div>
        <div class="outer">
-		<div class="fotorama_custom"  data-width="100%"
+		<div class="fotorama_custom" id="bombaj" data-width="100%"
         data-ratio="800/600" data-loop="true" data-autoplay="3000"  data-arrows="true" data-click="true" data-swipe="true" data-autoplay="true" >
          <img  src="img/bombaj2.jpg" alt="">
 		 <img  src="img/bombaj3.jpg" alt="">
@@ -133,23 +133,23 @@
 	<script>
 
     // 1. Initialize fotorama manually.
-var $fotoramaDiv = jQuery('.fotorama_custom').fotorama({
+var $fotoramaDiv = jQuery('#bombaj').fotorama({
   click:false,
   allowfullscreen:true,
 });
 
     // 2. Get the API object.
-    var fotorama = $fotoramaDiv.data('fotorama');
+    var bombaj = $fotoramaDiv.data('fotorama');
 
 
-jQuery('.fotorama').dblclick(function(){
-    fotorama.requestFullScreen();
+jQuery('#bombaj').dblclick(function(){
+    bombaj.requestFullScreen();
 
 });
 
 
-jQuery('.fotorama').on('doubletap',function(){
- fotorama.requestFullScreen();
+jQuery('#bombaj').on('doubletap',function(){
+ bombaj.requestFullScreen();
 });
 
 </script>
